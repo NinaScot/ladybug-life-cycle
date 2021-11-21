@@ -49,16 +49,12 @@ p {
 
 /* Layout */
 body {
-  display: grid;
-  grid-template-columns: 1fr 2.5fr;
   background-image: url("../ladybug_assets_cycle/leaf_background_cycle.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom right;
 }
 .card {
-  grid-column-start: 1;
-  grid-column-end: 2;
   background-color: var(--ladybug-pink);
   padding: 2rem;
 }
@@ -102,5 +98,13 @@ body {
   }
   button {
     font-size: var(--desktop-button-text-fontsize);
+  }
+  .card {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  body {
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr;
   }
 }
