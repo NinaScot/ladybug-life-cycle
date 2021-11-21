@@ -5,3 +5,18 @@ video {
   width: 100%;
   height: auto;
 }
+/* Variables */
+:root {
+  --color--: # ;
+
+/* Fonts */
+h1 {
+}
+h2 {
+}
+p {
+}
+
+/* Card Layout */
+/* Mobile only */
+/* Desktop only */
