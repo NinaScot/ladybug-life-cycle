@@ -7,16 +7,43 @@ video {
 }
 /* Variables */
 :root {
+  --ladybug-red: #a51515;
+  --ladybug-pink: #dda6a6;
+  --ladybug-white: #f8ebeb;
+  --ladybug-black: #5c517e;
+
+  --mobile-h1-fontsize: 2.5rem;
+  --mobile-h2-fontsize: 1.5rem;
+  --mobile-p-fontsize: 1rem;
+  --mobile-button-text-fontsize: 0.75rem;
+
+  --desktop-h1-fontsize: 3rem;
+  --desktop-h2-fontsize: 2.5rem;
+  --desktop-p-fontsize: 1.5rem;
+  --desktop-button-text-fontsize: 0.5rem;
 }
 
 /* Fonts */
+h1,
+h2,
+p,
+button {
+  font-family: "Work Sans", sans-serif;
+}
 h1 {
+  color: var(--ladybug-white);
+  line-height: 1.1;
+  grid-column-start: 2;
 }
 
 h2 {
+  color: var(--ladybug-white);
+  line-height: 1.1;
 }
 
 p {
+  color: var(--ladybug-black);
+  line-height: 1.5;
 }
 
 /* Layout */
@@ -31,12 +58,12 @@ body {
 .card {
   grid-column-start: 1;
   grid-column-end: 2;
-  background-color: pink;
+  background-color: var(--ladybug-pink);
   padding: 2rem;
 }
 
 .card p {
-  background-color: white;
+  background-color: var(--ladybug-white);
   border-radius: 0.5rem;
   padding: 1rem;
 }
@@ -44,5 +71,35 @@ body {
 /* FAQ Layout */
 .faq {
 }
+
 /* Mobile only */
+@media (max-width: 39.9375em) {
+  h1 {
+    font-size: var(--mobile-h1-fontsize);
+  }
+  h2 {
+    font-size: var(--mobile-h2-fontsize);
+  }
+  p {
+    font-size: var(--mobile-p-fontsize);
+  }
+  button {
+    font-size: var(--mobile-button-text-fontsize);
+  }
+}
+
 /* Desktop only */
+@media (min-width: 40em) {
+  h1 {
+    font-size: var(--desktop-h1-fontsize);
+  }
+  h2 {
+    font-size: var(--desktop-h2-fontsize);
+  }
+  p {
+    font-size: var(--desktop-p-fontsize);
+  }
+  button {
+    font-size: var(--desktop-button-text-fontsize);
+  }
+}
