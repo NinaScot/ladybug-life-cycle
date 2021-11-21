@@ -46,14 +46,15 @@ p {
   color: var(--ladybug-black);
   line-height: 1.5;
 }
+body {
+  background-image: url("../ladybug_cycle_assets/leaf_background_site.png");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 /* Layout */
-body {
-  background-image: url("../ladybug_assets_cycle/leaf_background_cycle.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom right;
-}
+
 .card {
   background-color: var(--ladybug-pink);
   padding: 2rem;
