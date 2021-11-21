@@ -7,16 +7,42 @@ video {
 }
 /* Variables */
 :root {
-  --color--: # ;
+}
 
 /* Fonts */
 h1 {
 }
+
 h2 {
 }
+
 p {
 }
 
-/* Card Layout */
+/* Layout */
+body {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  background-image: url("../ladybug_assets_cycle/leaf_background_cycle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.card {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: pink;
+  padding: 2rem;
+}
+
+.card p {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+/* FAQ Layout */
+.faq {
+}
 /* Mobile only */
 /* Desktop only */
