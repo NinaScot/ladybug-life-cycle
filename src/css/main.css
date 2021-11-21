@@ -34,6 +34,7 @@ h1 {
   color: var(--ladybug-white);
   line-height: 1.1;
   grid-column-start: 2;
+  margin: 0 0 1rem 0;
 }
 
 h2 {
