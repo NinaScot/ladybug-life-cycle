@@ -20,7 +20,7 @@ video {
   --desktop-h1-fontsize: 3rem;
   --desktop-h2-fontsize: 2.5rem;
   --desktop-p-fontsize: 1.5rem;
-  --desktop-button-text-fontsize: 0.5rem;
+  --desktop-button-text-fontsize: 1rem;
 }
 
 /* Fonts */
@@ -67,7 +67,28 @@ body {
 }
 
 /* Layout */
-
+.button_area {
+  padding-top: 1rem;
+  display: flex;
+  background-color: var(--ladybug-pink);
+  justify-content: space-around;
+}
+button {
+  background-color: var(--ladybug-red);
+  color: var(--ladybug-white);
+  border: none;
+  text-align: center;
+  border-radius: 0.25rem;
+  padding: 0.3rem;
+}
+.continue_button {
+  display: flex;
+}
+button:hover {
+  background-color: var(--ladybug-black);
+  color: var(--ladybug-pink);
+  cursor: pointer;
+}
 .card {
   background-color: var(--ladybug-pink);
   padding: 2rem;
@@ -143,8 +164,5 @@ button {
   body {
     display: grid;
     grid-template-columns: 1.5fr 2.5fr;
-  }
-  .button_area {
-    display: flex;
   }
 }

@@ -40,6 +40,15 @@ let slides = [
   {
     completedAction: false,
   },
+  {
+    completedAction: false,
+  },
+  {
+    completedAction: false,
+  },
+  {
+    completedAction: false,
+  },
 ];
 let slideElements = document.querySelectorAll(".slide");
 
