@@ -52,12 +52,26 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
+/* Cursor */
+
+.ladybug_cursor {
+  position: absolute;
+  background: var(--ladybug-red);
+  border-radius: 5rem;
+  mix-blend-mode: color-dodge;
+  opacity: 80%;
+  width: 3rem;
+  height: 3rem;
+  top: 0;
+  left: 0;
+}
 
 /* Layout */
 
 .card {
   background-color: var(--ladybug-pink);
   padding: 2rem;
+  opacity: 0;
 }
 
 .card p {
@@ -65,13 +79,27 @@ body {
   border-radius: 0.5rem;
   padding: 1rem;
 }
+.slide {
+  opacity: 0;
+}
 
+.slide.active {
+  opacity: 1;
+}
+
+.slide.completed-action {
+  background: lightblue;
+}
+
+button {
+  font-family: "Work Sans", sans-serif;
+}
 /* FAQ Layout */
 .faq {
 }
 
 /* Mobile only */
-@media (max-width: 39.9375em) {
+@media (max-width: 49.9375em) {
   h1 {
     font-size: var(--mobile-h1-fontsize);
   }
@@ -84,10 +112,18 @@ body {
   button {
     font-size: var(--mobile-button-text-fontsize);
   }
+  body {
+    display: grid;
+    grid-template-rows: 1fr 2.5fr;
+  }
+  .card {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
 }
 
 /* Desktop only */
-@media (min-width: 40em) {
+@media (min-width: 50em) {
   h1 {
     font-size: var(--desktop-h1-fontsize);
   }
@@ -107,5 +143,8 @@ body {
   body {
     display: grid;
     grid-template-columns: 1.5fr 2.5fr;
+  }
+  .button_area {
+    display: flex;
   }
 }

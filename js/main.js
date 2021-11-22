@@ -13,3 +13,15 @@ function typewriter() {
   }
 }
 typewriter();
+
+//cursor
+
+let html = document.querySelector("html");
+let div = document.querySelector("div");
+
+function logMouse(e) {
+  console.log(e.clientX, e.clientY);
+  div.style = `top: ${e.clientY}px; left: ${e.clientX}px`;
+}
+
+html.addEventListener("mousemove", logMouse);
