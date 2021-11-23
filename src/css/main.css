@@ -72,6 +72,9 @@ body {
   display: flex;
   background-color: var(--ladybug-pink);
   justify-content: space-around;
+  z-index: 1;
+  position: absolute;
+  bottom: 10px;
 }
 button {
   background-color: var(--ladybug-red);
@@ -89,18 +92,17 @@ button:hover {
   color: var(--ladybug-pink);
   cursor: pointer;
 }
-.slide {
-  background-color: var(--ladybug-pink);
-  padding: 2rem;
-  opacity: 0;
-}
 
 .slide p {
   background-color: var(--ladybug-white);
   border-radius: 0.5rem;
   padding: 1rem;
 }
+body {
+}
 .slide {
+  background-color: var(--ladybug-pink);
+  padding: 2rem;
   opacity: 0;
   transition: all 300ms;
   justify-content: center;
@@ -139,15 +141,15 @@ button {
     font-size: var(--mobile-button-text-fontsize);
   }
   body {
-    display: grid;
-    grid-template-rows: 1fr 2.5fr;
-  }
-  .card {
-    grid-row-start: 2;
-    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
   }
   .button_area {
-    max-height: 3rem;
+    max-height: 100px;
+    padding-bottom: 1rem;
+    z-index: 2;
+  }
+  .slide {
   }
 }
 
@@ -165,18 +167,12 @@ button {
   button {
     font-size: var(--desktop-button-text-fontsize);
   }
-  body {
-    display: grid;
-    grid-template-columns: 1.5fr 2.5fr;
-    grid-template-rows: 1fr 90px;
-  }
+
   .slide {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    max-width: 20em;
+    min-height: 100vh;
   }
 
   .button_area {
-    grid-row-start: 2;
-    padding-bottom: 1rem;
   }
 }
