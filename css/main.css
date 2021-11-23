@@ -89,23 +89,28 @@ button:hover {
   color: var(--ladybug-pink);
   cursor: pointer;
 }
-.card {
+.slide {
   background-color: var(--ladybug-pink);
   padding: 2rem;
   opacity: 0;
 }
 
-.card p {
+.slide p {
   background-color: var(--ladybug-white);
   border-radius: 0.5rem;
   padding: 1rem;
 }
 .slide {
   opacity: 0;
+  transition: all 300ms;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
 }
 
 .slide.active {
   opacity: 1;
+  z-index: 1;
 }
 
 .slide.completed-action {
@@ -160,15 +165,16 @@ button {
   button {
     font-size: var(--desktop-button-text-fontsize);
   }
-  .card {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
   body {
     display: grid;
     grid-template-columns: 1.5fr 2.5fr;
     grid-template-rows: 1fr 90px;
   }
+  .slide {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
   .button_area {
     grid-row-start: 2;
     padding-bottom: 1rem;

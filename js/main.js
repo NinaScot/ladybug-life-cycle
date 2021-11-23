@@ -1,20 +1,3 @@
-// animation
-/* define things */
-var i = 0;
-var txt =
-  "An interactive, informational site about the life cycle of our favorite red and spotted beetles.";
-
-var speed = 50; /* The speed/duration of the effect in milliseconds */
-/* make function */
-function typewriter() {
-  if (i < txt.length) {
-    document.getElementById("ladybug_intro_text").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typewriter, speed);
-  }
-}
-typewriter();
-
 //cursor
 /* define things */
 let html = document.querySelector("html");
@@ -97,3 +80,36 @@ document
   .querySelector("#do-slide-action")
   .addEventListener("click", slideAction);
 document.querySelector("#slide-next").addEventListener("click", next);
+
+// typewriter animation for intro card
+/* define things */
+var i = 0;
+var txt =
+  "An interactive, informational site about the life cycle of our favorite red and spotted beetles.";
+
+var speed = 50; /* The speed/duration of the effect in milliseconds */
+/* make function */
+function typewriter() {
+  if (i < txt.length) {
+    document.getElementById("ladybug_intro_text").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typewriter, speed);
+  }
+}
+typewriter();
+
+// // typewriter animation for hatching card
+// /* define things */
+// var i = 0;
+// var txt = "Ladybugs start off hatching from eggs in the form of larvae.";
+
+// var speed = 50; /* The speed/duration of the effect in milliseconds */
+// /* make function */
+// function typewriter2() {
+//   if (i < txt.length) {
+//     document.getElementById("hatching_text").innerHTML += txt.charAt(i);
+//     i++;
+//     setTimeout(typewriter2, speed);
+//   }
+// }
+// typewriter2();
