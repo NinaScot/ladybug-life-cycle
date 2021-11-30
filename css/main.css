@@ -70,8 +70,9 @@ body {
 /* Layout */
 .button_area {
   display: flex;
+  gap: 2rem;
+  padding: 1rem;
   padding-top: 1rem;
-
   z-index: 2;
   position: absolute;
   bottom: 10px;
@@ -163,8 +164,13 @@ button {
   .ladybug_cycle_info {
     max-width: 20em;
     min-height: 100vh;
+    min-width: 20em;
   }
   .slide {
     display: flex;
+  }
+  .ladybug_cycle_info p {
+    max-height: 12em;
+    overflow: scroll;
   }
 }

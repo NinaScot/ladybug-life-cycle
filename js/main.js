@@ -7,8 +7,9 @@ function logMouse(e) {
   console.log(e.clientX, e.clientY);
   div.style = `top: ${e.clientY}px; left: ${e.clientX}px`;
 }
-
 html.addEventListener("mousemove", logMouse);
+
+// Move from continue page
 
 // Changing Slides
 /* define things */
