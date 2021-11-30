@@ -55,7 +55,7 @@ body {
 /* Cursor */
 
 .ladybug_cursor {
-  z-index: 1;
+  z-index: 4;
   position: absolute;
   background: var(--ladybug-red);
   border-radius: 5rem;
@@ -115,10 +115,6 @@ button:hover {
   z-index: 1;
 }
 
-.slide.completed-action {
-  background: var(--ladybug-black);
-}
-
 button {
   font-family: "Work Sans", sans-serif;
 }
@@ -160,6 +156,16 @@ a:visited {
 }
 a:hover {
   color: var(--ladybug-pink);
+}
+
+.completed_image {
+  display: none;
+}
+.completed-action .completed_image {
+  display: flex;
+}
+.completed-action .action_image {
+  display: none;
 }
 
 /* Mobile only */

@@ -1,4 +1,4 @@
-//cursor
+//CURSOR JSCRIPT
 /* define things */
 let html = document.querySelector("html");
 let div = document.querySelector("div");
@@ -9,14 +9,13 @@ function logMouse(e) {
 }
 html.addEventListener("mousemove", logMouse);
 
-// Move from continue page
-
+// SLIDE TO SLIDE J SCRIPT
 // Changing Slides
 /* define things */
 let slideIndex = 0;
 let slides = [
   {
-    completedAction: false,
+    completedAction: true,
   },
   {
     completedAction: false,
@@ -41,6 +40,8 @@ function slideAction() {
   console.log("Doing Slide Action");
   slides[slideIndex].completedAction = true;
   slideElements[slideIndex].classList.add("completed-action");
+  // document.getElementsByClassName(action_image).addEventListener(onclick);
+  // document.getElementsByClassName(completed_image).classList.toggle("active");
 }
 
 // next() check to see if action is complete, if so, navigate to next slide
@@ -77,11 +78,12 @@ function reset() {
   });
 }
 
-document
-  .querySelector("#do-slide-action")
-  .addEventListener("click", slideAction);
+document.querySelectorAll(".action_image").forEach((img) => {
+  img.addEventListener("click", slideAction);
+});
 document.querySelector("#slide-next").addEventListener("click", next);
 
+// TYPEWRITER JSCRIPT
 // typewriter animation for intro card
 /* define things */
 var i = 0;
@@ -99,6 +101,7 @@ function typewriter() {
 }
 typewriter();
 
+// SOURCE BUTTON JSCRIPT
 // Get
 // button
 let sourcebutton = document.getElementById("sourcebutton");
