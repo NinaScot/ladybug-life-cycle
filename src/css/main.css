@@ -123,7 +123,44 @@ button {
   font-family: "Work Sans", sans-serif;
 }
 
-/* Images */
+aside {
+  display: none;
+  background: var(--ladybug-black);
+  opacity: 90%;
+  background-blend-mode: multiply;
+  position: fixed;
+  inset: 0;
+}
+
+aside > div {
+  background: white;
+  max-width: 75ch;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+
+aside.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+
+.sourcebutton {
+  background-color: var(--ladybug-black);
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 3;
+}
+
+a:visited {
+  color: var(--ladybug-black);
+}
+a:hover {
+  color: var(--ladybug-pink);
+}
 
 /* Mobile only */
 @media (max-width: 54.9375em) {
@@ -170,7 +207,7 @@ button {
     display: flex;
   }
   .ladybug_cycle_info p {
-    max-height: 12em;
+    max-height: 20em;
     overflow: scroll;
   }
 }
