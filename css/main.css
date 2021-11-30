@@ -50,11 +50,12 @@ body {
   background-image: url("../ladybug_cycle_assets/leaf_background_site.png");
   background-color: #cccccc;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 /* Cursor */
 
 .ladybug_cursor {
+  z-index: 3;
   position: absolute;
   background: var(--ladybug-red);
   border-radius: 5rem;
@@ -69,7 +70,6 @@ body {
 /* Layout */
 .button_area {
   padding-top: 1rem;
-  display: flex;
   background-color: var(--ladybug-pink);
   justify-content: space-around;
   z-index: 1;
@@ -98,20 +98,17 @@ button:hover {
   border-radius: 0.5rem;
   padding: 1rem;
 }
-body {
-  display: flex;
-}
+
 .ladybug_cycle_info {
+  padding: 2rem;
   background-color: var(--ladybug-pink);
 }
 .slide {
-  padding: 2rem;
   opacity: 0;
   transition: all 300ms;
   justify-content: center;
   align-items: center;
   position: fixed;
-  display: flex;
 }
 
 .slide.active {
@@ -145,10 +142,6 @@ button {
   button {
     font-size: var(--mobile-button-text-fontsize);
   }
-  body {
-    display: flex;
-    flex-direction: column;
-  }
   .button_area {
     max-height: 100px;
     padding-bottom: 1rem;
@@ -175,7 +168,7 @@ button {
     max-width: 20em;
     min-height: 100vh;
   }
-
-  .button_area {
+  .slide {
+    display: flex;
   }
 }
