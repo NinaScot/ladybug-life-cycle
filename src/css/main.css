@@ -93,21 +93,25 @@ button:hover {
   cursor: pointer;
 }
 
-.slide p {
+.ladybug_cycle_info p {
   background-color: var(--ladybug-white);
   border-radius: 0.5rem;
   padding: 1rem;
 }
 body {
+  display: flex;
+}
+.ladybug_cycle_info {
+  background-color: var(--ladybug-pink);
 }
 .slide {
-  background-color: var(--ladybug-pink);
   padding: 2rem;
   opacity: 0;
   transition: all 300ms;
   justify-content: center;
   align-items: center;
   position: fixed;
+  display: flex;
 }
 
 .slide.active {
@@ -122,8 +126,9 @@ body {
 button {
   font-family: "Work Sans", sans-serif;
 }
-/* FAQ Layout */
-.faq {
+
+/* Images */
+.ladybug_first_pic {
 }
 
 /* Mobile only */
@@ -149,8 +154,6 @@ button {
     padding-bottom: 1rem;
     z-index: 2;
   }
-  .slide {
-  }
 }
 
 /* Desktop only */
@@ -168,7 +171,7 @@ button {
     font-size: var(--desktop-button-text-fontsize);
   }
 
-  .slide {
+  .ladybug_cycle_info {
     max-width: 20em;
     min-height: 100vh;
   }
