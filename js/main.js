@@ -99,18 +99,17 @@ function typewriter() {
 }
 typewriter();
 
-// // typewriter animation for hatching card
-// /* define things */
-// var i = 0;
-// var txt = "Ladybugs start off hatching from eggs in the form of larvae.";
+// Get
+// button
+let sourcebutton = document.getElementById("sourcebutton");
+// aside
+let aside = document.querySelector("aside");
 
-// var speed = 50; /* The speed/duration of the effect in milliseconds */
-// /* make function */
-// function typewriter2() {
-//   if (i < txt.length) {
-//     document.getElementById("hatching_text").innerHTML += txt.charAt(i);
-//     i++;
-//     setTimeout(typewriter2, speed);
-//   }
-// }
-// typewriter2();
+// Behavior
+function toggleModal() {
+  aside.classList.toggle("active");
+}
+
+// Wire
+sourcebutton.addEventListener("click", toggleModal);
+aside.addEventListener("click", toggleModal);
