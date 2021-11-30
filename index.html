@@ -18,73 +18,151 @@
   <div class="ladybug_cursor" id="cursor_space"></div>
   <body>
     <!--- Card Introduction --->
-    <div class="active intro_card slide">
-      <ladybug_intro_text onload="typewriter">
-        <h1>The Life Cycle of a Ladybug</h1>
-        <p id="ladybug_intro_text"></p>
-      </ladybug_intro_text>
-      <img
-        src="./ladybug_cycle_assets/ladybug_og_art.png"
-        alt="red mature
+    <div class="active slide">
+      <div class="ladybug_cycle_info">
+        <ladybug_intro_text onload="typewriter">
+          <h1>The Life Cycle of a Ladybug</h1>
+          <p id="ladybug_intro_text"></p>
+        </ladybug_intro_text>
+      </div>
+
+      <div>
+        <img
+          class="ladybug_first_pic"
+          src="./ladybug_cycle_assets/ladybug_og_art.png"
+          alt="red mature
       ladybug"
-        width="3300"
-        height="2400"
-      />
+          width="3300"
+          height="2400"
+        />
+      </div>
     </div>
 
     <!--Hatching Card-->
     <div class="slide">
-      <hatching_text onload="typewriter2">
+      <div class="ladybug_cycle_info">
         <p id="hatching_text">
           Ladybugs start off hatching from eggs in the form of larvae
         </p>
-      </hatching_text>
+      </div>
+
+      <div>
+        <img
+          class="ladybug_eggs"
+          src="ladybug_cycle_assets/eggs_art.PNG"
+          alt="yellow ladybug eggs"
+          width="3300"
+          height="2400"
+        />
+      </div>
     </div>
     <!-- append hatching process here -->
 
     <!-- Eating Aphids Card -->
     <div class="slide">
-      <p>
-        They may eat the leftover fertilized eggs, but will then spend most of
-        their eating other bugs, like aphids, scale insects, mites, etc.
-      </p>
+      <div class="ladybug_cycle_info">
+        <p>
+          They may eat the leftover fertilized eggs, but will then spend most of
+          their eating other bugs, like aphids, scale insects, mites, etc.
+        </p>
+      </div>
+
+      <div>
+        <img
+          class="ladybug_larvae"
+          src="ladybug_cycle_assets//ladybug_larvae.PNG"
+          alt="ladybug larvae"
+          width="3300"
+          height="2400"
+        />
+      </div>
     </div>
 
-    <!-- Shedding Skin Card -->
+    <!-- Pupae Card -->
     <div class="slide">
-      <p>
-        They also shed their skin many times before becoming a pupae. There, the
-        ladybug larvae will mature into adults.
-      </p>
+      <div class="ladybug_cycle_info">
+        <p>
+          They also shed their skin many times before becoming a pupae. There,
+          the ladybug larvae will mature into adults.
+        </p>
+      </div>
+
+      <div>
+        <img
+          class="ladybug_larvae"
+          src="ladybug_cycle_assets//ladybug_larvae.PNG"
+          alt="ladybug larvae"
+          width="3300"
+          height="2400"
+        />
+      </div>
     </div>
     <!-- append shedding process here -->
 
     <!-- Shell Color Change Card -->
     <div class="slide">
-      <p>
-        When they first hatch, their shells are pale orange and fade into bright
-        red over time.
-      </p>
+      <div class="ladybug_cycle_info">
+        <p>
+          When they first hatch, their shells are pale orange and fade into
+          bright red over time.
+        </p>
+      </div>
+
+      <div>
+        <img
+          class="color_change_pic"
+          src="ladybug_cycle_assets/orange_ladybug.PNG"
+          alt="ladybug with an orange shell"
+          width="3300"
+          height="2400"
+        />
+      </div>
     </div>
     <!-- append color change here -->
 
     <!-- Hibernation Card -->
     <div class="slide">
-      <p>
-        In the winter, ladybugs undergo diapause, a method of hibernation,
-        during the winter months. Once they find a warm, safe environment, they
-        can regulate their body temperature and live off their own energy
-        reserves.
-      </p>
+      <div class="ladybug_cycle_info">
+        <p>
+          In the winter, ladybugs undergo diapause, a method of hibernation,
+          during the winter months. Once they find a warm, safe environment,
+          they can regulate their body temperature and live off their own energy
+          reserves.
+        </p>
+      </div>
+
+      <div>
+        <img
+          class="hibernate_pic"
+          src="ladybug_cycle_assets/ladybug_og_art.png"
+          alt="ladybug falling asleep"
+          width="3300"
+          height="2400"
+        />
+      </div>
     </div>
 
     <!-- Spring Card -->
     <div class="slide">
-      <p>
-        In the spring, they exit hibernation and begin searching for a mate to
-        start over the process again.
-      </p>
+      <div class="ladybug_cycle_info">
+        <p>
+          In the spring, they exit hibernation and begin searching for a mate to
+          start over the process again.
+        </p>
+      </div>
+
+      <div>
+        <img
+          class="ladybugs_find_love"
+          src="ladybug_cycle_assets/ladybug_og_art.png"
+          alt="ladybugs about to mate"
+          width="3300"
+          height="2400"
+        />
+      </div>
     </div>
+
+    <!-- buttons -->
     <div class="button_area">
       <button id="do-slide-action">Do Slide Action</button>
       <button id="slide-next" class="continue_button">
@@ -112,18 +190,6 @@
       </button>
     </div>
 
-    <!-- FAQ Section
-    <div class="faq1 faq">
-      <h2>Are all ladybugs ladies?</h2>
-    </div>
-
-    <div class="faq2 faq">
-      <h2>Does the number of spots on a ladybug indicate its age?</h2>
-    </div>
-
-    <div class="faq3 faq">
-      <h2>Are ladybugs helpful to keep around plants?</h2>
-    </div>
-     -->
+    <!-- Sources Accordion-->
   </body>
 </html>
