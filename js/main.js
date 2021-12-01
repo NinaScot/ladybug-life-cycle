@@ -86,24 +86,6 @@ document.querySelectorAll(".action_image").forEach((img) => {
 });
 document.querySelector("#slide-next").addEventListener("click", next);
 
-// TYPEWRITER JSCRIPT
-// typewriter animation for intro card
-/* define things */
-var i = 0;
-var txt =
-  "An interactive, informational site about the life cycle of our favorite red and spotted beetles.";
-
-var speed = 50; /* The speed/duration of the effect in milliseconds */
-/* make function */
-function typewriter() {
-  if (i < txt.length) {
-    document.getElementById("ladybug_intro_text").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typewriter, speed);
-  }
-}
-typewriter();
-
 // SOURCE BUTTON JSCRIPT
 // Get
 // button
